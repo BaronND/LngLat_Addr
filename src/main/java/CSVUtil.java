@@ -14,9 +14,8 @@ public class CSVUtil {
 
     public static void main(String[] args) throws Exception {
         // 测试导出
-        //E:/临时文档/web_test/test/test_data.csv   /mnt/yinyi/lnglat/test_data/lnglat_addr_csv/p001.csv
         String fname=args[0].toString();
-        String rfilePath = "/mnt/yinyi/lnglat/test_data/lnglat_addr_csv/p00"+fname+".csv";
+        String rfilePath = "/p00"+fname+".csv";
         readCSV(rfilePath,fname);
     }
 
@@ -26,8 +25,7 @@ public class CSVUtil {
      */
     public static List<String> readCSV(String filePath,String wf) throws Exception {
 
-        //E:/临时文档/web_test/test/result.csv  /mnt/yinyi/lnglat/result_data/lnglat_result_xls/1.csv
-        String wfilePaht="/mnt/yinyi/lnglat/result_data/lnglat_result_xls/p00"+wf+".csv";
+        String wfilePaht="/p00"+wf+".csv";
         CsvReader reader = null;
         List<String> dataList = new ArrayList<String>();
         try {
